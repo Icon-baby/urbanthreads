@@ -1,0 +1,399 @@
+/* Global Styles */
+body {
+    font-family: 'Comic Sans MS', cursive;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; /* Ensure the body fills the viewport height */
+}
+
+header {
+    flex: 1 0 20%; /* Flexbox shorthand for flex-grow, flex-shrink, flex-basis */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #333;
+    position: fixed;
+    width: calc(100% - 30px); /* Adjusted width to account for padding */
+    top: 0; /* Ensure the header stays at the top of the viewport */
+    z-index: 1000; /* Ensure the header stays above other content */
+    color: #fff;
+    padding: 10px 20px;
+}
+
+main {
+    flex: 1; /* The remaining 80% of the height */
+    overflow-x: auto; /* Allow horizontal scrolling */
+    overflow-y: hidden; /* Hide vertical scrolling */
+    padding-top: 30px;
+}
+
+.about_urban {
+    padding-top: 20px;
+}
+
+nav {
+    float: right;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+nav ul li {
+    display: inline-block;
+    margin-right: 20px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.logo {
+    float: left;
+}
+
+.logo img {
+    width: 150px;
+}
+
+.account-section {
+    display: flex;
+    align-items: center;
+    margin-left: 20px;
+}
+
+
+/* Login Page Styles */
+.login-section,
+.signup-section {
+    text-align: center;
+}
+
+.login-container,
+.signup-container {
+    max-width: 500px;
+    padding-top: 20px;
+    margin: auto;
+    margin-top: auto;
+    padding: 20px;
+    border: 5px solid #ccc;
+    border-radius: 5px;
+    text-align: center;
+}
+
+.input-group {
+    margin-bottom: 20px;
+    position: relative;
+}
+
+.input-group input {
+    width: 80%;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.input-group i {
+    position: absolute;
+    top: 50%;
+    left: 10px;
+    transform: translateY(-50%);
+    color: #666;
+}
+
+.btn1 {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.btn:hover {
+    background-color: #555;
+}
+
+.login-link,
+.signup-link {
+    margin-top: 20px;
+    font-size: 14px;
+}
+
+.signup-link a {
+    color: #333;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.signup-link a:hover {
+    text-decoration: underline;
+}
+
+
+.featured-products {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.featured-products .product {
+    margin: 10px;
+    text-align: center;
+}
+
+.featured-products .product img {
+    width: 200px;
+    height: auto;
+}
+
+
+main h2{
+    padding-top: 50px;
+    overflow-x: auto;
+    text-align: center;
+}
+
+
+.logo {
+    float: left;
+}
+
+.logo img {
+    width: 150px;
+}
+
+.account-section {
+    display: flex;
+    align-items: center;
+    margin-left: 20px;
+}
+
+.explore-collection{
+    text-align: center;
+    padding-top: 10px;
+}
+
+a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 16px;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px 20px;
+    margin-top: auto;
+}
+
+/* CSS for Social */
+.social {
+    margin-bottom: 10px; /* Add spacing between text and social icons */
+}
+
+.social ul{
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex; /* Use flexbox for horizontal alignment */
+    justify-content: center; /* Center-align social icons */
+}
+.social ul li{
+    display: inline;
+    padding: 1%;
+    margin: 0 10px; /* Add spacing between social icons */
+}
+
+.social ul li a img {
+    width: 32px; /* Adjust size of social icons */
+    height: 32px;
+}
+
+/* Home Page Styles */
+.hero {
+    background-color: #f4f4f4;
+    text-align: center;
+    padding: 30px 20px;
+}
+
+.hero h2 {
+    color: #333;
+    font-size: 24px;
+}
+
+.hero p {
+    color: #666;
+    font-size: 16px;
+}
+
+.btn {
+    background-color: #4CAF50;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    text-transform: uppercase;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+/* Products Page Styles */
+.products {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+    padding: 20px;
+    overflow-y: auto;
+    max-height: calc(100vh - 200px);
+    margin-bottom: 20px;
+}
+
+.products article {
+    background-color: #f4f4f4;
+    padding: 20px;
+}
+
+.products img {
+    max-width: 100%;
+}
+
+/* Contact Page Styles */
+.contact{
+    padding-top: 100px;
+}
+.contact form {
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+.contact label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.contact input[type="text"],
+.contact input[type="email"],
+.contact textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.contact textarea {
+    resize: vertical;
+}
+
+.contact button {
+    background-color: #4CAF50;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    text-transform: uppercase;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.contact button:hover {
+    background-color: #45a049;
+}
+
+/*Other CSS*/
+
+.about{
+    text-align: center;
+}
+
+.about_urban{
+    text-align: center;
+    padding-top: 20px;
+}
+
+.urban_blog{
+    text-align: center;
+    padding-top: 10px;
+}
+
+.contact_urban{
+    text-align: center;
+    padding-top: 10px;
+}
+
+.welcome{
+    text-align: center;
+    padding-top: 50px;
+}
+
+.urban_trends{
+    padding-top: 10px;
+}
+
+/* Blog Page Styles */
+.blog {
+    padding: 20px;
+}
+
+.blog-post {
+    margin-bottom: 40px;
+}
+
+.blog-post h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.blog-post p {
+    font-size: 16px;
+    line-height: 1.6;
+    margin-bottom: 10px;
+}
+
+.blog-post strong {
+    font-weight: bold;
+}
+
+/* Responsive YouTube Video */
+.blog-post iframe {
+    max-width: 100%;
+    height: auto;
+}
+
+/*Cart CSS*/
+
+.update-btn{
+    background-color: royalblue;
+    color: whitesmoke;
+}
+
+.remove-btn{
+    background-color: red;
+    color: whitesmoke;
+}
+
+.checkout-btn{
+    background-color: #4CAF50;
+    color: #333;
+}
+
+.continue-shopping-btn{
+    background-color: royalblue;
+    color: #333;
+}
+
+
+
+
+
